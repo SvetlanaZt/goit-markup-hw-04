@@ -118,6 +118,8 @@ h5 {
 /* Банер********/
 
 .hero {
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(./images/baner.jpg);
   height: 600px;
   max-width: 1600px;
   color: var(--second-text-color);
@@ -261,10 +263,7 @@ h5 {
   border: 0;
   padding: 0;
 }
-.svg-group {
-  display: inline;
-  fill: #212121;
-}
+
 .section-title {
   padding-bottom: 60px;
 }
@@ -289,6 +288,41 @@ h5 {
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 16px;
+}
+
+.svg-list {
+  width: 44px;
+  height: 44px;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.svg-list + .svg-list {
+  margin-left: 10px;
+}
+
+.svg-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.svg-link:hover,
+.svg-link:focus {
+  background-color: var(--accent-color);
+}
+.svg-link:hover .svg-group,
+.svg-link:focus .svg-group {
+  fill: #ffffff;
+}
+.networks {
+  display: flex;
+}
+.svg-group {
+  fill: #afb1b8;
 }
 
 /*Футер**********/
