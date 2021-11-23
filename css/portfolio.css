@@ -162,9 +162,13 @@ h5 {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
-
   background: #ffffff;
   border: 1px solid #eeeeee;
+}
+.list-style:hover,
+.list-style:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .list-style:nth-child(3n) {
   margin-right: 0;
@@ -176,6 +180,8 @@ h5 {
   text-decoration: none;
 }
 .list-text {
+  padding-bottom: 20px;
+  padding-left: 24px;
   font-weight: normal;
   font-size: 16px;
   line-height: 1.8;
@@ -183,6 +189,8 @@ h5 {
   color: var(--text-p-color);
 }
 .list-title {
+  padding-left: 24px;
+  padding-top: 20px;
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
