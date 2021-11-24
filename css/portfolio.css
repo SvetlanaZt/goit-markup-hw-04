@@ -21,6 +21,7 @@ h5 {
 }
 .header {
   border: 1px solid #ececec;
+  align-items: center;
   margin-bottom: 94px;
 }
 .container-main {
@@ -30,7 +31,6 @@ h5 {
   padding-left: 15px;
   padding-right: 15px;
   margin: auto;
-  align-items: center;
 }
 .header-logo {
   color: var(--accent-color);
@@ -69,7 +69,6 @@ h5 {
   letter-spacing: 0.02em;
   color: #212121;
 }
-
 .link {
   display: list-item;
 }
@@ -79,8 +78,8 @@ h5 {
   align-items: center;
 }
 
-.header-link .link:hover,
-.header-link .link:focus {
+.link:hover,
+.link:focus {
   color: var(--accent-color);
 }
 .header-info {
@@ -89,20 +88,49 @@ h5 {
   align-items: center;
   padding-top: 20px;
   padding-bottom: 20px;
+  padding: 0;
 }
 
 .header-tell {
+  display: flex;
+  flex-direction: row-reverse;
   font-weight: 500;
   font-size: 14px;
   margin-right: 50px;
+  padding-left: 10px;
   line-height: 1.1;
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--text-p-color);
 }
+.tell-list:hover {
+  color: var(--accent-color);
+}
+.tell-list:hover .mail-svg {
+  fill: #2196f3;
+}
+
+.button-svg {
+  width: 270px;
+  height: 120px;
+  border: none;
+  margin-bottom: 30px;
+}
+.tell-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mail-svg {
+  fill: #757575;
+}
 .header-tell:hover,
 .header-tell:focus {
   color: var(--accent-color);
+}
+.header-tell:hover .mail-svg,
+.header-tell:focus .mail-svg {
+  fill: var(--accent-color);
 }
 
 /***Tabs*/
@@ -205,13 +233,15 @@ h5 {
 .footer {
   background: #2f303a;
   height: 252px;
+  display: flex;
+  padding-top: 60px;
+  padding-left: 215px;
 }
 .container-footer {
   max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  padding-top: 50px;
-  margin: 0 auto;
+  margin-right: 70px;
 }
 .footer-logo {
   text-decoration: none;
@@ -261,4 +291,48 @@ h5 {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
+}
+
+/*Иконки**********/
+
+.join-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--second-text-color);
+  margin-bottom: 20px;
+}
+.join-list {
+  width: 44px;
+  height: 44px;
+  margin-bottom: 30px;
+}
+.join {
+  display: flex;
+}
+.join {
+  padding-left: 0;
+}
+.join-list + .join-list {
+  margin-left: 10px;
+}
+
+.join-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  background: rgba(255, 255, 255, 0.1);
+  align-items: center;
+  justify-content: center;
+}
+.join-link:hover,
+.join-link:focus {
+  background-color: var(--accent-color);
+}
+.join-link:hover .svg-group,
+.join-link:focus .svg-group {
+  fill: #ffffff;
 }
