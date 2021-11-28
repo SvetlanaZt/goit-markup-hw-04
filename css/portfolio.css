@@ -96,13 +96,13 @@ h5 {
   flex-direction: row-reverse;
   font-weight: 500;
   font-size: 14px;
-  margin-right: 50px;
   padding-left: 10px;
   line-height: 1.1;
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--text-p-color);
 }
+
 .tell-list:hover {
   color: var(--accent-color);
 }
@@ -120,6 +120,9 @@ h5 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.tell-list:last-child {
+  margin-right: 0;
 }
 .mail-svg {
   fill: #757575;

@@ -123,6 +123,9 @@ h5 {
   justify-content: center;
   align-items: center;
 }
+.tell-list:last-child {
+  margin-right: 0;
+}
 .mail-svg {
   fill: #757575;
 }
